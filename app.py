@@ -61,7 +61,7 @@ memes = [
 ]
 
 def merge_meme(input):
-    hehe = memes[1]
+    hehe = memes[0]
     meme = Image.open(input).convert('RGBA').resize(hehe["meme_size"])
     img = Image.open(hehe["resource"], 'r')
     meme = meme.rotate(hehe["rotate"], resample=Image.BICUBIC, expand=True)
